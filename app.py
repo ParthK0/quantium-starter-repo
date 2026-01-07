@@ -178,16 +178,14 @@ def update_sales_chart(selected_region):
                 'font': {'size': 20, 'color': '#FF1493', 'family': 'Arial'}
             },
             xaxis={
-                'title': 'Date',
+                'title': {'text': 'Date', 'font': {'size': 14, 'color': '#555'}},
                 'showgrid': True,
-                'gridcolor': '#E8E8E8',
-                'titlefont': {'size': 14, 'color': '#555'}
+                'gridcolor': '#E8E8E8'
             },
             yaxis={
-                'title': 'Daily Sales ($)',
+                'title': {'text': 'Daily Sales ($)', 'font': {'size': 14, 'color': '#555'}},
                 'showgrid': True,
-                'gridcolor': '#E8E8E8',
-                'titlefont': {'size': 14, 'color': '#555'}
+                'gridcolor': '#E8E8E8'
             },
             hovermode='x unified',
             plot_bgcolor='#FAFAFA',
@@ -276,12 +274,12 @@ def update_regional_chart(selected_region):
         'data': traces,
         'layout': go.Layout(
             xaxis={
-                'title': 'Date',
+                'title': {'text': 'Date', 'font': {'size': 14, 'color': '#555'}},
                 'showgrid': True,
                 'gridcolor': '#E8E8E8'
             },
             yaxis={
-                'title': 'Daily Sales ($)',
+                'title': {'text': 'Daily Sales ($)', 'font': {'size': 14, 'color': '#555'}},
                 'showgrid': True,
                 'gridcolor': '#E8E8E8'
             },
